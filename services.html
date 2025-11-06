@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Semantic Web Page</title>
+    <style>
+        *{box-sizing:border-box}
+        body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;color:#0b1220;background:linear-gradient(180deg,#f6f9ff,#fff)}
+
+        header{background:linear-gradient(90deg,#0b3d91,#0a2e6b);color:#fff;padding:34px 18px;text-align:center}
+        header h1{margin:0}
+
+        .top-menu{background:rgba(234,246,255,1);text-align:center;padding:12px 8px;box-shadow:0 2px 8px rgba(10,20,40,0.04)}
+        .top-menu a{color:#0b3d91;text-decoration:none;margin:0 12px;font-weight:600;padding:6px 8px;border-radius:8px}
+        .top-menu a:hover{background:rgba(11,61,145,0.08)}
+
+        .services-container{max-width:1100px;margin:28px auto;padding:0 18px}
+        .service-item{display:flex;align-items:center;gap:20px;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 24px rgba(12,22,43,0.06);margin-bottom:18px;flex-wrap:nowrap;overflow:hidden}
+        .service-icon{width:96px;height:96px;flex:0 0 96px}
+        .service-content{flex:1 1 auto;min-width:0}
+        .service-content h2{margin:0 0 8px;color:#0b3d91}
+        .service-content p{color:#6b7280;margin:0;overflow-wrap:break-word}
+
+        .btn{background:linear-gradient(90deg,#0b3d91,#1f5fbf);color:#fff;padding:10px 14px;border-radius:10px;border:none;cursor:pointer}
+
+        footer{position:fixed;left:0;right:0;bottom:0;background:rgba(6,12,30,0.92);color:#fff;padding:16px;text-align:center}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Semantic Web Page</h1>
+        <p>Using modern HTML5 structure</p>
+    </header>
+
+    <div class="top-menu">
+        <a href="./Home.html"><b>Home</b></a>
+        <a href="./About.html"><b>About</b></a>
+        <a href="./Services.html"><b>Services</b></a>
+        <a href="./Contact.html"><b>Contact</b></a>
+    </div>
+
+    <div class="services-container">
+        <div class="service-item">
+            <img src="https://img.icons8.com/color/96/000000/code.png" alt="Software Development Icon" class="service-icon">
+            <div class="service-content">
+                <h2>Software development</h2>
+                <p>We build custom web and mobile applications tailored to your business needs. From planning and design to deployment and maintenance, we deliver reliable, user-friendly software that scales.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="AI/ML Icon" class="service-icon">
+            <div class="service-content">
+                <h2>AI/ML</h2>
+                <p>We design and train machine learning models and AI systems to extract insights and automate processes. Our work includes predictive modeling, natural language processing, and computer vision solutions.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="https://img.icons8.com/color/96/000000/analytics.png" alt="Data Analysis Icon" class="service-icon">
+            <div class="service-content">
+                <h2>Data analyses</h2>
+                <p>We analyze your data to find patterns, create clear visualizations, and build dashboards that help you make data-driven decisions quickly and confidently.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="height:60px"></div>
+
+    <footer>
+        <p>© 2025 My Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

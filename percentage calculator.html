@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Percentage Calculator</title>
+    <style>
+        body {
+            background: #78aee4;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #67e186;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            width: 320px;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #8f3b3b;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #000000;
+            color: #bd0bd4;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 17px;
+            color: #d438b0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Percentage Calculator</h2>
+        <input type="number" id="totalMarks" placeholder="Enter total marks obtained" />
+        <input type="number" id="numSubjects" placeholder="Enter number of subjects" />
+        <button onclick="calculatePercentage()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function calculatePercentage() {
+            const total = parseFloat(document.getElementById('totalMarks').value);
+            const subjects = parseFloat(document.getElementById('numSubjects').value);
+            if (isNaN(total) || isNaN(subjects) || subjects === 0) {
+                document.getElementById('result').textContent = "Please enter valid inputs.";
+                return;
+            }
+            const percentage = (total / (subjects * 100)) * 100;
+            document.getElementById('result').textContent = "Percentage: " + percentage.toFixed(2) + "%";
+        }
+    </script>
+</body>
+
+</html>
